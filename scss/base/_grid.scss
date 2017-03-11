@@ -1,0 +1,28 @@
+// Ancho máximo del container
+$max-width: 1200px;
+
+// Separación entre items
+$padding: 1.618rem;
+
+// Breakpoints
+$breakpoints: (
+	movil  : 480px,
+	tablet : 768px,
+	web    : 1024px,
+	hd     : 1400px
+);
+
+// Fracciones para los anchos de los items
+$fracciones: (
+	tres	: 3,
+	seis	: 6,
+	siete	: 7,
+	ocho	: 8,
+	doce 	: 12
+);
+
+// Componentes
+@import "gridComponentes/core";
+@import "gridComponentes/mixins";
+@import "gridComponentes/utilidades";
+@import "gridComponentes/flexbox";

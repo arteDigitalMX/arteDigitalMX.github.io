@@ -1,0 +1,49 @@
+// Variables personalizadas
+	// Colores
+		$colorPrincipal: #E53935;
+		$colorSecundario: #2196F3;
+
+		$fondoPagina: #F5F5F5;
+
+		$colorTexto: #666;
+
+		$colorEnlace: lighten($colorPrincipal,10);
+		$colorEnlaceHover: lighten($colorSecundario,10);
+
+		$colorEncabezado: $colorPrincipal;
+
+// Importamos componentes
+	//Fuentes
+		@font-face {
+			font-family: "Texto";
+			src: url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+		}
+		@font-face {
+			font-family: "Titulo";
+			src: url('https://fonts.googleapis.com/css?family=Oswald:300,400');
+		}
+
+	// Bases y variables iniciales
+		@import "librerias/normalize";  // Normalize | Libreria para normalizar estilos en todos los navegadores
+		@import "base/base"; // Estilos base | Se aplican antes del Framework
+		@import "base/mixins"; // Mixins personalizados
+		@import "base/grid"; // Importamos el Grid
+
+	// Frameworks y otras librerias
+	@import "librerias/fontAwesome/font-awesome"; // Importamos los IconFonts | FontAwesome
+	@import "librerias/Lightcase/lightcase"; // Importamos la libreria | Lightcase
+
+	// Tema | Estilos personalizados para este proyecto
+		@import "tema/main";
+		@import "tema/header";
+		@import "tema/footer";
+		@import "tema/imagenes";
+		@import "tema/menus";
+		@import "tema/formularios";
+		@import "tema/botones";
+
+	// Estilos finales
+		@import "tema/final";
+
+	// Modulos perzonalizados
+		@import "modulos/modulos"; // Estilos para nuestros modulos

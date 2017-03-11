@@ -1,0 +1,21 @@
+/* arteDigitalMX | http://arteDigitalMX.xyz */
+
+/* TEAM */
+	Creator:	Ángel Amaro
+	Contact:	angel.dw@outlook.com
+	Web:		http://arteDigitalMX.xyz
+	Github:		/arteDigitalMX
+	Gitlab:		/arteDigitalMX
+	Codepen:	/arteDigitalMX
+	Twitter:	@arteDigitalMX
+	Facebook:	/arteDigitalMX
+	From:		CDMX, México
+
+/* THANKS */
+
+/* SITE */
+	Last update: 	11/03/2017
+	Language:		Español MX
+	Standars:		HTML5, CSS3, Javascript
+	Components:		Normalize, jQuery, Font-Awesome, Lightcase, Scrollreveal
+	Software:		Visual Studio Code, Prepros

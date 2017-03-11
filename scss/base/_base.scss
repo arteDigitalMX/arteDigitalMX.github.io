@@ -1,0 +1,131 @@
+// BASE
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Texto", sans-serif;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+// Imágenes responsive
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+// Textos y titulos
+p {
+	color: $colorTexto;
+	cursor: default;
+	font-family: 'Texto', sans-serif;
+	font-size: 1rem;
+	line-height: 1.618;
+	margin-top: 0;
+	text-align: left;
+	&.blanco {
+		color: #FFF;
+	}
+}
+
+a {
+	color: $colorEnlace;
+	cursor: pointer;
+	font-family: 'Texto', sans-serif;
+	font-size: 1rem;
+	transition: color .2s ease;
+	&.blanco {
+		color: #FFF;
+	}
+	&:hover {
+		color: $colorEnlaceHover;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $colorEncabezado;
+	cursor: default;
+	font-family: 'Titulo', sans-serif;
+	font-size: 1rem;
+	margin: 0;
+	margin-bottom: 1rem;
+	padding: 0;
+}
+h1 {
+	font-size: 2.5rem;
+}
+h2 {
+	font-size: 2rem;
+}
+h3 {
+	font-size: 1.5rem;
+}
+
+// Listas
+ul, li {
+	color: $colorTexto;
+	cursor: default;
+	font-family: 'Texto', sans-serif;
+	font-size: 1rem;
+	text-align: justify;
+	&.blanco {
+		color: #FFF;
+	}
+}
+
+// Tablas
+table {
+	background: darken($fondoPagina, 5);
+	width: 100%;
+	caption {
+		color: $colorSecundario;
+		font-weight: 400;
+		padding: .5rem;
+	}
+	th, td, tr {
+		font-weight: 300;
+		text-align: left;
+		padding: .5rem;
+		width: auto;
+	}
+	tr:nth-child(even) {
+		background: $fondoPagina;
+	}
+	th {
+		background: rgba(0,0,0,.2);
+		color: #FFF;
+		border: 1px solid $fondoPagina;
+	}
+	td:nth-child(odd) {
+		background: rgba(0,0,0,.1);
+		border: 1px solid $fondoPagina;
+	}
+
+}
+
+// Otros
+hr {
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(211, 47, 47, 0.75), rgba(0, 0, 0, 0));
+	margin: 1rem 0;
+}
+
+mark {
+	background: lighten($colorPrincipal, 20);
+	color: $colorTexto;
+}
+
+pre, code {
+	background: #212121;
+	color: #FAFAFA;
+	font-family: monospace;
+	padding: .5rem;
+}

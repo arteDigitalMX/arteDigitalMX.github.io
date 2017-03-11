@@ -1,0 +1,51 @@
+doctype html
+html(lang="es")
+
+	//- Head
+	include componentes/head
+
+	body.abcenter
+		#particles-js
+
+		//- Header
+		include componentes/header
+
+		//- Nav
+		include componentes/nav
+
+
+
+		#logo
+			img(src="img/logo_.png", alt="arteDigitalMX").sR_Abajo
+			h1.sR_scale Ángel Amaro 
+				span desarrolladorWeb
+		
+		
+		#redes.justify.sR_Arriba
+			a(href="https://github.com/arteDigitalMX", target="_blank", title="Github")
+				i.fa.fa-github
+			a(href="http://codepen.io/arteDigitalMX/", target="_blank", title="Codepen")
+				i.fa.fa-codepen
+			a(href="http://artedigitalmx.xyz", target="_blank", title="arteDigitalMX")
+				i.fa.fa-html5
+			a(href="https://twitter.com/arteDigitalMX", target="_blank", title="Twitter")
+				i.fa.fa-twitter
+			a(href="https://www.facebook.com/arteDigitalMX/", target="_blank", title="Facebook")
+				i.fa.fa-facebook
+
+
+
+
+		//- Footer
+		include componentes/footer
+
+
+		//- jQuery y scripts principales
+		script(src="js/jquery.js")
+		//- Librerias JS
+		script(src="js/particles.js")
+		script(src="js/particulas.js")
+		script(src="js/scrollreveal_min.js")
+		script(src="js/lightcase_min.js")
+		//- Scripts personales
+		script(src="js/scripts_min.js")

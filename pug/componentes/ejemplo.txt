@@ -1,0 +1,420 @@
+main(role="main", id="top")
+	.container
+		.item
+			h2.abcenter arteDigitalMX | Framework
+		.item.web-1-3
+			a(href="https://arte-digital.mx", target="_blank")
+				img(src="img/logo.png", alt="")
+		.item.web-2-3
+			p Este <i>framework</i> es un conjunto de estilos,  <i>scripts</i>, tipografías,  <i>icon-fonts</i>, entre otras librerías  de libre distribución. Desarrollado por <a href="http://artedigitalmx.xyz" target="_blank">arteDigitalMX</a> este entorno de trabajo es implementado para la maquetación, diseño y desarrollo de sitios web.
+			p Puede utilizarse para el desarrollo desde cero o bien, para la creación de plantillas HTML5 completamente  <i>responsive</i> para sistemas de gestión de contenido como  <i>WordPress</i>,  <i>Drupal</i>,  <i>Joomla</i>, entre otros.
+			p Agradecemos a las librerías utilizadas:
+				a(href="https://necolas.github.io/normalize.css/", target="_blank") Normalize
+				| , 
+				a(href="https://fortawesome.github.io/Font-Awesome/", target="_blank") FontAwesome
+				| , 
+				a(href="https://scrollrevealjs.org/", target="_blank") ScrollReveals
+				| , 
+				a(href="http://cornel.bopp-art.com/lightcase/", target="_blank") Lightcase 
+				|  
+				| y 
+				a(href="https://jquery.com/", target="_blank") jQuery 
+				| v2.1.4.
+			p A continuación mostramos la forma en que se visualizan y se utilizan algunos elementos.
+
+nav.menuPrincipal
+	.grupo
+		#toggle-menu.caja
+			.menu
+				span.menu-item
+				span.menu-item
+				span.menu-item
+			h1 arteDigitalMX
+		#multi-menu.caja
+			ul
+				li: a(href="#top") Presentación
+				li: a(href="#Grid") Grid
+				li: a(href="#Textos") Textos
+				li: a(href="#Codigos") Códigos
+				li: a(href="#Acordeon") Acordeón
+				li: a(href="#iconFont") iconFont
+				li: a(href="#scrollReveal") ScrollReveal
+				li: a(href="#lightcase") Lightcase
+
+section#Grid
+	.container
+		.item
+			hr
+section
+	.container
+		.item.tablet-50
+			h3.azul Grid | Sistema de rejilla
+			p El Grid es un sistema de filas y columnas que se utiliza para poder tener un mejor control de los contenedores “DIV”, tanto en su posición como en su tamaño. Como en casi todos los grids, utilizamos un contenedor para cada fila y este a su vez contendrá los ítems para generar las columnas que necesitemos.
+			p El contenedor principal es un DIV con la clase “container” el cual tiene un ancho máximo definido de 1200px, aunque este valor puede modificarse también puede añadirse la clase “full” para crear un contenedor que tenga el ancho total del viewport.
+		.item.tablet-50
+			p Dentro de los contenedores están otros DIV con la clase “ítem”, estos serán los necesarios para crear las columnas que necesitemos y para definir su tamaño debemos añadir 2 parámetros más en una clase; el primero es el breakpoint (base, movil, tablet, web, hd) seguido del tamaño en fracción o en porcentaje.
+			p Si definimos el tamaño en porcentaje debemos colocar la clase "breackpoint-%"" es decir, para indicar un 50% desde el breakpoin movil seria la clase “movil-50” y en caso de utilizar fracciones como ejemplo de un tercio en sería la clase "tablet-1-3".
+			p Las fracciones pueden ser creadas, editadas y eliminadas.
+
+	section.Estilos
+		p
+			< section >
+		.container.full
+			p
+				| DIV class="container full"
+		.container
+			p
+				| DIV class="container"
+
+		.container
+			.item
+				p
+					| DIV class="item"
+		.container
+			- for (var x = 0; x < 2; x++)
+				.item.base-50
+					p 50%
+		.container
+			- for (var x = 0; x < 3; x++)
+				.item.base-1-3
+					p 1-3
+		.container
+			- for (var x = 0; x < 4; x++)
+				.item.base-25
+					p 25%
+		.container
+			- for (var x = 0; x < 5; x++)
+				.item.base-20
+					p 20%
+		.container
+			- for (var x = 0; x < 6; x++)
+				.item.base-1-6
+					p 1-6
+		.container
+			- for (var x = 0; x < 7; x++)
+				.item.base-1-7
+					p 1-7
+		.container
+			- for (var x = 0; x < 8; x++)
+				.item.base-1-8
+					p 1-8
+		.container
+			- for (var x = 0; x < 12; x++)
+				.item.base-1-12
+					p 1-12
+
+	.container
+		.item
+			p Los tamaños pueden ser combinados según la necesidad del layout, tanto en "containers" con tamaño máximo definido como en los que tienen la clase "full".
+
+	section.Estilos
+		.container.full
+			.item.base-20
+				p 20%
+			.item.base-30
+				p 30%
+			.item.base-50
+				p 50%
+		.container.full
+			.item.base-3-12
+				p 3-12
+			.item.base-4-12
+				p 4-12
+			.item.base-5-12
+				p 5-12
+		br
+		.container
+			.item.base-50
+				p 50%
+			.item.base-30
+				p 30%
+			.item.base-20
+				p 20%
+		.container
+			.item.base-2-8
+				p 2-8
+			.item.base-4-8
+				p 4-8
+			.item.base-2-8
+				p 2-8
+
+section#Textos
+	.container
+		.item
+			hr
+section
+	.container
+		.item
+			h1 Este es un encabezado H1
+			h2 Este es un encabezado H2
+			h3 Este es un encabezado H3
+			h4 Este es un encabezado H4
+			h5 Este es un encabezado H5
+			h6 Este es un encabezado H6
+	.container
+		.item.tablet-50
+			p Esto es un parrafo de una sola linea
+			p Y este es multilinea... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium at ipsum vero cupiditate quaerat optio vel illum ratione maxime accusamus, dolorem incidunt facilis cum consequuntur eveniet, delectus odit voluptas fuga!
+			p.text-left Texto alineado a la iszquierda con la clase "text-left"
+			p.text-right Texto alineado a la derecha con la clase "text-right"
+			p.text-center Texto alineado al centro con la clase "text-center"
+			p.text-justify Este parrafo sera justificado al agregar la clase "text-justify" a la etiqueta "p"
+			blockquote
+				p Utilizando blockquote
+		.item.tablet-50
+			p
+				mark Utilizando la etiqueta MARK
+			p
+				del Utilizando la etiqueta DEL
+			p
+				s Utilizando la etiqueta S
+			p
+				ins Utilizando la etiqueta INS
+			p
+				u Utilizando la etiqueta U
+			p
+				small Utilizando la etiqueta SMALL
+			p
+				strong Utilizando la etiqueta STRONG
+			p
+				em Utilizando la etiqueta EM
+			p Utilizando la etiqueta
+				abbr(title="Abreviación") ABBR
+		.item.tablet-50
+			ul
+				li Elemento de lista 1
+				li Elemento de lista 2
+				li Elemento de lista 3
+				li Elemento de lista 4
+				li Elemento de lista 5
+		.item.tablet-50
+			ol
+				li Elemento de lista 1
+				li Elemento de lista 2
+				li Elemento de lista 3
+				li Elemento de lista 4
+				li Elemento de lista 5
+
+section#Codigos
+	.container
+		.item
+			hr
+section
+	.container
+		.item
+			h3.azul Codigos
+		.item.tablet-50
+			p Utilizando la etiqueta CODE 
+				code &lt;section&gt;
+			p Utilizando la etiqueta PRE 
+				pre &lt;p&gt;Sample text here...&lt;/p&gt;
+			p Utilizando la etiqueta VAR 
+				var x
+			p Utilizando la etiqueta SAMP 
+				samp Utilizando la etiqueta SAMP
+		.item.tablet-50
+			table
+				caption Título de la tabla
+				tr
+					th uno
+					th dos
+					th tres
+					th cuatro
+					th cinco
+				- for (var x = 0; x < 5; x++)
+					tr
+						td 1
+						td 2
+						td 3
+						td 4
+						td 5
+
+
+section#Acordeon
+	.container
+		.item
+			hr
+section
+	.container
+		.item
+			h3.azul Acordeón
+		.item
+			p Éste es un simple script que permite mostrar contenido con efecto de acordeón.
+			p Podemos usar sólo uno o múltiples acordeones, utilizando el siguiente código.
+			pre 
+				| .acordeonContenedor.container
+				br
+				| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a(title="abrir/cerrar").acordeon_titulo Acordeon 1
+				br
+				| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .acordeon_contenido
+				br
+				| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Lorem ipsum dolor sit amet.
+		.item
+			.acordeonContenedor.container
+				.acordeon.item.tablet-1-3
+					a(title="abrir/cerrar").acordeon_titulo Acordeon 1
+					.acordeon_contenido
+						ul
+							li Elemento 1
+							li Elemento 2
+							li Elemento 3
+							li Elemento 4
+							li Elemento 5
+				.acordeon.item.tablet-1-3
+					a(title="abrir/cerrar").acordeon_titulo Acordeon 2
+					.acordeon_contenido
+						ul
+							li Elemento 1
+							li Elemento 2
+							li Elemento 3
+							li Elemento 4
+							li Elemento 5
+				.acordeon.item.tablet-1-3
+					a(title="abrir/cerrar").acordeon_titulo Acordeon 3
+					.acordeon_contenido
+						ul
+							li Elemento 1
+							li Elemento 2
+							li Elemento 3
+							li Elemento 4
+							li Elemento 5
+
+
+section#iconFont
+	.container
+		.item
+			hr
+section
+	.container
+		.item
+			h3.azul Íconos de FontAwesome
+		.item
+			p La colección completa de font-icons esta en el sitio oficial de 
+				a(href="https://fortawesome.github.io/Font-Awesome/icons/", target="_blank") Font Awesome
+			h1
+				i.espacio.fa.fa-facebook
+				i.espacio.fa.fa-twitter
+				i.espacio.fa.fa-google-plus
+				i.espacio.fa.fa-youtube
+				i.espacio.fa.fa-whatsapp
+				i.espacio.fa.fa-vimeo
+				i.espacio.fa.fa-twitch
+				i.espacio.fa.fa-tumblr
+				i.espacio.fa.fa-steam
+				i.espacio.fa.fa-spotify
+				i.espacio.fa.fa-skype
+				i.espacio.fa.fa-safari
+				i.espacio.fa.fa-code
+				i.espacio.fa.fa-reddit
+				i.espacio.fa.fa-pinterest
+				i.espacio.fa.fa-paypal
+				i.espacio.fa.fa-opera
+				i.espacio.fa.fa-linux
+				i.espacio.fa.fa-linkedin
+				i.espacio.fa.fa-joomla
+				i.espacio.fa.fa-edge
+				i.espacio.fa.fa-html5
+				i.espacio.fa.fa-css3
+
+			p Para su implemetación debe darse la clase "fa" seguida de una segunda clase "fa-ICONO" donde "ICONO" es sustituido por el icon-font deseado, ejemplo del icono de Twitter:
+				pre
+					| &lt;i class="fa fa-twitter"&gt;
+
+section#scrollReveal
+	.container
+		.item
+			hr
+section
+	.container
+		.item
+			h3.azul ScrollReveal
+	.container
+		.item
+			p Añadiendo una clase a cualquier elemento, se consigue el efecto de Revelación según la posición del scroll
+		.item.tablet-50.sR_fade
+			img(src="http://lorempixel.com/800/450/", alt="")
+			p añadimos la clase
+				strong sR_fade
+		.item.tablet-50.sR_scale
+			img(src="http://lorempixel.com/800/450/", alt="")
+			p añadimos la clase
+				strong sR_scale
+		.item.tablet-50.sR_Izquierda
+			img(src="http://lorempixel.com/800/450/", alt="")
+			p añadimos la clase
+				strong sR_Izquierda
+		.item.tablet-50.sR_Derecha
+			img(src="http://lorempixel.com/800/450/", alt="")
+			p añadimos la clase
+				strong sR_Derecha
+		.item.tablet-50.sR_Arriba
+			img(src="http://lorempixel.com/800/450/", alt="")
+			p añadimos la clase
+				strong sR_Arriba
+		.item.tablet-50.sR_Abajo
+			img(src="http://lorempixel.com/800/450/", alt="")
+			p añadimos la clase
+				strong sR_Abajo
+
+		.item.tablet-50.sR_giroIzquierda
+			img(src="http://lorempixel.com/800/450/", alt="")
+			p añadimos la clase
+				strong sR_giroIzquierda
+		.item.tablet-50.sR_giroDerecha
+			img(src="http://lorempixel.com/800/450/", alt="")
+			p añadimos la clase
+				strong sR_giroDerecha
+		.item.tablet-50.sR_giroIzquierda2
+			img(src="http://lorempixel.com/800/450/", alt="")
+			p añadimos la clase
+				strong sR_giroIzquierda2
+		.item.tablet-50.sR_giroDerecha2
+			img(src="http://lorempixel.com/800/450/", alt="")
+			p añadimos la clase
+				strong sR_giroDerecha2
+		.item.tablet-50.sR_giroArriba
+			img(src="http://lorempixel.com/800/450/", alt="")
+			p añadimos la clase
+				strong sR_giroArriba
+		.item.tablet-50.sR_giroAbajo
+			img(src="http://lorempixel.com/800/450/", alt="")
+			p añadimos la clase
+				strong sR_giroAbajo
+
+
+section#lightcase
+	.container
+		.item
+			hr
+section
+	.container
+		.item
+			h3.azul Lightcase
+	.container
+		.item
+			p Ejemplo imagenes modales
+			pre a(href="http://lorempixel.com/800/400", data-rel="lightcase:myCollection:slideshow", title="Titulo 1") Texto o imágen de enlace
+		.item.tablet-1-3
+			a(href="img/bg.jpg", data-rel="lightcase", title="Titulo 1", alt="Este es el ALT", description="Este es el description") Texto o miniatura
+		.item.tablet-1-3
+			a(href="img/bg.jpg", data-rel="lightcase:myCollection", title="Titulo 2") Texto o miniatura (colección)
+		.item.tablet-1-3
+			a(href="img/bg.jpg", data-rel="lightcase:myCollection", title="Titulo 3") Texto o miniatura (colección)
+
+	.container
+		.item
+			p Ejemplo ventana modal
+			pre a(href="#Modal1", data-rel="lightcase") Texto o miniatura
+			pre div#Modal1(style="display: none;") Contenido
+
+			a(href="#Modal1", data-rel="lightcase") Texto o miniatura
+			#Modal1(style="display: none;") Contenido
+
+		-for (var i = 0; i <= 10; i++)
+			br
+
+		.item
+			h4 Se recomienda eliminar las librerías o funciones que no se utilicen, para mejorar el rendimiento.
+
+		-for (var i = 0; i <= 10; i++)
+			br
