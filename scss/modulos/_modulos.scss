@@ -12,10 +12,15 @@
 /* ---- particles.js container ---- */
 body {
 	background-attachment: fixed;
+	background-color: #000;
 	background-image: url("../img/bg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
+	height: 100vh;
+	position: relative;
+	width: 100vw;
+	z-index: -999999999999999;
 }
 #particles-js {
 	position:fixed;
